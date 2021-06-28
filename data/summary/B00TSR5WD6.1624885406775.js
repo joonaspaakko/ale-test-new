@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>In <i>Off the Grid</i>, Jane goes on what looks like a simple mission for the Knoxville blood-master - finding a missing Mithran. Her search leads Jane to a young woman named Nell, a woman with a scarred past and a strange power, a woman who may hold the key to saving the missing vampire, if Jane can convince her to assist. </p>";

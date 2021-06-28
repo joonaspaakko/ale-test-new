@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>When someone makes a present of a fer-de-lance - the dreaded snake - to Nero Wolfe, Archie Goodwin knows he's close to solving two apparently unrelated murders.&nbsp;</p> <p>As for Wolfe, he's playing snake charmer in a case more deadly than a cobra and whistling a seductive tune he hopes will catch a killer with poison in his heart.</p>";

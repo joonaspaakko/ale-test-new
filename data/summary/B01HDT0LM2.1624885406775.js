@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>When a forgotten journal materializes decades after Drake Ramsey's father vanished in the Amazon jungle, Drake decides to follow in his footsteps and search for the legendary treasure of the Inca empire hidden in the lost Inca city of Paititi. </p>";

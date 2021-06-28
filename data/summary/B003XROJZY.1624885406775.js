@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>A centuries-old, cursed pirate's treasure, valued at over $2 billion, lies deep within the treacherous waters off the coast of Maine. Men who have attempted to unearth the fortune have suffered gruesome deaths. Will a high-tech expedition meet the same fate?</p>";

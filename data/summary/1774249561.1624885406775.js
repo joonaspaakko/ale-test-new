@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p><b>All Doctor Dire wants to do is save the world. </b></p> <p>But those pesky heroes keep getting in the way, and it's all she can do to give them a good fight without killing them. Supervillainy is such an underappreciated job these days....</p>";

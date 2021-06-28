@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Jane Yellowrock is back on the prowl against the children of the night. The vampire council has hired skinwalker Yellowrock to hunt and kill one of their own who has broken sacred ancient rules - but Jane quickly realizes that in a community that is thousands of years old, loyalties run deep.</p>";

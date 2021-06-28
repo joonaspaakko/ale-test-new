@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Best-selling author John Grisham stirs up trouble in paradise in his endlessly surprising new thriller. </p> <p>Priceless F. Scott Fitzgerald manuscripts stolen in a daring heist; a young woman recruited to recover them, and a beach-resort bookseller who gets more than he bargained for - all in one long summer on Camino Island. </p>";

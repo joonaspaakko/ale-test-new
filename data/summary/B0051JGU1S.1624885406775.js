@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Here are the confessions of a vampire. Hypnotic, shocking, and chillingly erotic, this is a novel of mesmerizing beauty and astonishing force - a story of danger and flight, of love and loss, of suspense and resolution, and of the extraordinary power of the senses. It is a novel only Anne Rice could write. </p>";
