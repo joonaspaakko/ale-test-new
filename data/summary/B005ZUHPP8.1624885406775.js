@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>In the aftermath of WWII, an alien virus struck the Earth, endowing a handful of survivors with extraordinary powers. Originally published in 1987, the newly expanded saga contains additional original stories by eminent writers.</p>";

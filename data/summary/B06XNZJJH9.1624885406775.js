@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>The ancient gods are alive and well in the modern world in this hilarious, action-packed collection of original short stories featuring Atticus O'Sullivan, the handsome, tattooed, 2,000-year-old Irishman with extraordinary magic powers from Kevin Hearne's <i>New York Times</i> best-selling Iron Druid Chronicles. </p>";

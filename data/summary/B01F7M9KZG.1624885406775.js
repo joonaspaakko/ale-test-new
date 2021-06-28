@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>Internationally best-selling author Sophie Hannah and the world's favorite detective, Hercule Poirot, return in this follow-up to <i>The Monogram Murders</i>, the national best seller hailed by <i>The Washington Post</i> as \"literary magic\". </p>";

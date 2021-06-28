@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "Mercy Thompson's life is not exactly normal. Her next-door neighbor is a werewolf. Her former boss is a gremlin. And she's fixing a VW bus for a vampire. But then, Mercy isn't exactly normal herself.";
