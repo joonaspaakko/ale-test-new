@@ -17,5 +17,6 @@
 	"theme_color": "#f29a33",
 	"background_color": "#f29a33",
 	"display": "standalone",
-	"prefer_related_applications": false
+	"prefer_related_applications": false,
+	"start_url": "../index.html"
 }
