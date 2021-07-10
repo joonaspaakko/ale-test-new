@@ -5,22 +5,26 @@
         debug: false,
       });
       
-      workbox.loadModule('workbox-routing');
-      workbox.loadModule('workbox-strategies');
-      workbox.loadModule('workbox-expiration');
-      workbox.loadModule('workbox-cacheable-response');
-      
+      const {registerRoute} = workbox.routing;
+      const {
+        NetworkFirst,
+        StaleWhileRevalidate,
+        CacheFirst
+      } = workbox.strategies;
+      const CacheableResponsePlugin = workbox.cacheableResponse.CacheableResponsePlugin;
+      const ExpirationPlugin = workbox.expiration.ExpirationPlugin;
+
       // Cache page navigations (html) with a Network First strategy
-      workbox.route.registerRoute(
+      registerRoute(
         // Check to see if the request is a navigation to a new page
         ({ request }) => request.mode === 'navigate',
         // Use a Network First caching strategy
-        new workbox.strategies.networkFirst({
+        new NetworkFirst({
           // Put all cached files in a cache named 'pages'
           cacheName: 'pages',
           plugins: [
             // Ensure that only requests that result in a 200 status are cached
-            new workbox.cacheableResponse.cacheableResponsePlugin({
+            new CacheableResponsePlugin({
               statuses: [200],
             }),
           ],
@@ -28,19 +32,19 @@
       );
 
       // Cache CSS, JS, and Web Worker requests with a Stale While Revalidate strategy
-      workbox.route.registerRoute(
+      registerRoute(
         // Check to see if the request's destination is style for stylesheets, script for JavaScript, or worker for web worker
         ({ request }) =>
           request.destination === 'style' ||
           request.destination === 'script' ||
           request.destination === 'worker',
         // Use a Stale While Revalidate caching strategy
-        new workbox.strategies.staleWhileRevalidate({
+        new StaleWhileRevalidate({
           // Put all cached files in a cache named 'assets'
           cacheName: 'assets',
           plugins: [
             // Ensure that only requests that result in a 200 status are cached
-            new workbox.cacheableResponse.cacheableResponsePlugin({
+            new CacheableResponsePlugin({
               statuses: [200],
             }),
           ],
@@ -48,20 +52,22 @@
       );
 
       // Cache images with a Cache First strategy
-      workbox.route.registerRoute(
+      registerRoute(
         // Check to see if the request's destination is style for an image
-        ({ request }) => request.destination === 'image',
+        ({ url, request }) => 
+          request.destination === 'image' ||
+          url.origin === 'https://m.media-amazon.com',
         // Use a Cache First caching strategy
-        new workbox.strategies.cacheFirst({
+        new CacheFirst({
           // Put all cached files in a cache named 'images'
           cacheName: 'images',
           plugins: [
             // Ensure that only requests that result in a 200 status are cached
-            new workbox.cacheableResponse.cacheableResponsePlugin({
+            new CacheableResponsePlugin({
               statuses: [200],
             }),
             // Don't cache more than 50 items, and expire them after 30 days
-            new workbox.expiration.expirationPlugin({
+            new ExpirationPlugin({
               maxEntries: 50,
               maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
             }),
@@ -70,23 +76,23 @@
       );
       
       // Cache the Google Fonts stylesheets with a stale-while-revalidate strategy.
-      workbox.route.registerRoute(
+      registerRoute(
         ({url}) => url.origin === 'https://fonts.googleapis.com',
-        new workbox.strategies.staleWhileRevalidate({
+        new StaleWhileRevalidate({
           cacheName: 'google-fonts-stylesheets',
         })
       );
 
       // Cache the underlying font files with a cache-first strategy for 1 year.
-      workbox.route.registerRoute(
+      registerRoute(
         ({url}) => url.origin === 'https://fonts.gstatic.com',
-        new workbox.strategies.cacheFirst({
+        new CacheFirst({
           cacheName: 'google-fonts-webfonts',
           plugins: [
-            new workbox.cacheableResponse.cacheableResponsePlugin({
+            new CacheableResponsePlugin({
               statuses: [0, 200],
             }),
-            new workbox.expiration.expirationPlugin({
+            new ExpirationPlugin({
               maxAgeSeconds: 60 * 60 * 24 * 365,
               maxEntries: 30,
             }),
