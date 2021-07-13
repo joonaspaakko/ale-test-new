@@ -55,8 +55,8 @@
       registerRoute(
         // Check to see if the request's destination is style for an image
         ({ url, request }) => 
-          request.destination === 'image' ||
-          url.origin === 'https://m.media-amazon.com',
+          (request.destination === 'image' && url.origin !== 'https://m.media-amazon.com') || 
+          (request.destination === 'image' && url.origin === 'https://m.media-amazon.com' && !url.href.match(/_SL200_/) && !url.href.match(/_SL150_/)),
         // Use a Cache First caching strategy
         new CacheFirst({
           // Put all cached files in a cache named 'images'
