@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>In New York, eating out can be hell. </p> <p>Everyone loves a well-catered event, and the supernatural community is no different, but where do demons go to satisfy their culinary cravings? Welcome to Sin du Jour - where devils on horseback are the clients, not the dish. </p>"; 
