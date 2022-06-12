@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Surrounded by secrecy, it is home to the wildest dreams and darkest nightmares. Incredible amounts of money have been lavished on it. The best minds of two generations have labored to build it. And somehow, bit by bit, it is claiming the Earth's most valuable resource - its children. </p>"; 
