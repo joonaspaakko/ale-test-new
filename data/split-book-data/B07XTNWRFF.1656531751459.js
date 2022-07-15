@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>Sacred artists follow a thousand Paths to power, using their souls to control the forces of the natural world.&nbsp;&nbsp;</p> <p>Lindon is Unsouled, forbidden to learn the sacred arts of his clan.&nbsp;&nbsp;</p> <p>When faced with a looming fate he cannot ignore, he must rise beyond anything he's ever known...and forge his own Path.</p>"; 

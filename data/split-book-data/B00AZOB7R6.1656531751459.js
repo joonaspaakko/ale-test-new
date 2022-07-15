@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>Harry Crewe, the Homelander orphan girl, is pleased with her new home. Life in Istan is certainly easy, but a voice in her ear whispers that the home of her heart is among the Hillfolk, among the descendants of Lady Aerin, who once wielded Gonturan, the Blue Sword.</p>"; 
