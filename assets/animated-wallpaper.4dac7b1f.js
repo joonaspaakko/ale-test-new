@@ -1,0 +1,1 @@
+import"./makeCoverUrl.f6649fcf.js";import{C as o}from"./vendor.e7714c30.js";import{A as a}from"./animated-wallpaper-app.30778df1.js";const p=o(a);p.config.productionTip=!1;p.mount("#animated-wallpaper");
