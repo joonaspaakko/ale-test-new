@@ -2409,7 +2409,7 @@
   text-align: center;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.25);
-}.center-contents[data-v-e311c19e] {
+}.center-contents[data-v-93bb04d6] {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2417,7 +2417,7 @@
   align-content: center;
   justify-content: center;
 }
-.no-selection[data-v-e311c19e] {
+.no-selection[data-v-93bb04d6] {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -2440,7 +2440,7 @@
  * animation pulsate-bck
  * ----------------------------------------
  */
-@-webkit-keyframes pulsate-bck-e311c19e {
+@-webkit-keyframes pulsate-bck-93bb04d6 {
 0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2454,7 +2454,7 @@
     transform: scale(1);
 }
 }
-@keyframes pulsate-bck-e311c19e {
+@keyframes pulsate-bck-93bb04d6 {
 0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2468,7 +2468,7 @@
     transform: scale(1);
 }
 }
-.cancel-packaging[data-v-e311c19e] {
+.cancel-packaging[data-v-93bb04d6] {
   cursor: pointer;
   border: 1px dashed rgba(255, 255, 255, 0.4);
   background: transparent;
@@ -2477,51 +2477,51 @@
   padding: 1px 6px;
   border-radius: 3px;
 }
-.opt-groups[data-v-e311c19e] {
+.opt-groups[data-v-93bb04d6] {
   flex-direction: column !important;
 }
-.opt-groups .opt-group[data-v-e311c19e] {
+.opt-groups .opt-group[data-v-93bb04d6] {
   flex-direction: row !important;
   justify-content: space-between !important;
   margin: 0 !important;
 }
-.opt-groups .opt-group > div[data-v-e311c19e] {
+.opt-groups .opt-group > div[data-v-93bb04d6] {
   padding-top: 0px !important;
 }
-.opt-groups .opt-group .item-0[data-v-e311c19e] {
+.opt-groups .opt-group .item-0[data-v-93bb04d6] {
   width: 100px;
 }
-.opt-groups .opt-group .item-1[data-v-e311c19e] {
+.opt-groups .opt-group .item-1[data-v-93bb04d6] {
   width: 100px;
 }
-.opt-groups .opt-group .item-2[data-v-e311c19e] {
+.opt-groups .opt-group .item-2[data-v-93bb04d6] {
   width: 100px;
 }
-.opt-groups .opt-group .item-3[data-v-e311c19e] {
+.opt-groups .opt-group .item-3[data-v-93bb04d6] {
   width: 100px;
 }
-.opt-groups .opt-group [data-extra][data-v-e311c19e] {
+.opt-groups .opt-group [data-extra][data-v-93bb04d6] {
   width: auto;
 }
-.opt-group label[data-v-e311c19e] {
+.opt-group label[data-v-93bb04d6] {
   display: inline-flex !important;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 6px !important;
 }
-.opt-group[data-v-e311c19e] {
+.opt-group[data-v-93bb04d6] {
   position: relative;
   z-index: 0;
 }
-.opt-group input[data-v-e311c19e] {
+.opt-group input[data-v-93bb04d6] {
   opacity: 0;
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
 }
-.opt-group .visual-checkbox[data-v-e311c19e] {
+.opt-group .visual-checkbox[data-v-93bb04d6] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2531,32 +2531,32 @@
   border-radius: 4px;
   margin-right: 5px;
 }
-.theme-light .opt-group .visual-checkbox[data-v-e311c19e] {
+.theme-light .opt-group .visual-checkbox[data-v-93bb04d6] {
   border: 1px solid rgba(33, 35, 37, 0.25);
 }
-.theme-dark .opt-group .visual-checkbox[data-v-e311c19e] {
+.theme-dark .opt-group .visual-checkbox[data-v-93bb04d6] {
   border: 1px solid rgba(249, 248, 248, 0.25);
 }
-.opt-group .visual-checkbox .icon[data-v-e311c19e] {
+.opt-group .visual-checkbox .icon[data-v-93bb04d6] {
   display: none;
   color: #00ed00;
 }
-.opt-group .visual-checkbox .icon svg[data-v-e311c19e] {
+.opt-group .visual-checkbox .icon svg[data-v-93bb04d6] {
   width: 80%;
 }
-.opt-group label input:checked ~ .visual-checkbox .icon[data-v-e311c19e] {
+.opt-group label input:checked ~ .visual-checkbox .icon[data-v-93bb04d6] {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-.opt-group > .disabled[data-v-e311c19e] {
+.opt-group > .disabled[data-v-93bb04d6] {
   opacity: 0.6;
   cursor: default !important;
 }
-.opt-group > .disabled .visual-checkbox .icon[data-v-e311c19e] {
+.opt-group > .disabled .visual-checkbox .icon[data-v-93bb04d6] {
   color: inherit;
 }
-.top-wrapper[data-v-e311c19e] {
+.top-wrapper[data-v-93bb04d6] {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

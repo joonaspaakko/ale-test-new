@@ -1,6 +1,6 @@
 import { _ as __unplugin_components_1 } from "./gallery-lazy.719d725f.js";
 import { _ as __unplugin_components_0 } from "./gallery-page-title.a786f9b3.js";
-import { c as slugify } from "./gallery.c4d212c8.js";
+import { c as slugify } from "./gallery.db031907.js";
 import { m as makeCoverUrl } from "./gallery-makeCoverUrl.8378190f.js";
 import { _ as _export_sfc, c as createElementBlock, d as createVNode, a as createBaseVNode, t as toDisplayString, F as Fragment, j as renderList, e as createCommentVNode, r as resolveComponent, b as resolveDirective, o as openBlock, g as normalizeClass, i as createBlock, k as withCtx, w as withDirectives } from "./lodash.1321b47a.js";
 import "./content-script-helpers.e49fc91b.js";
@@ -184,4 +184,4 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 var galleryCollections = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-06c0c804"]]);
 export { galleryCollections as default };
-//# sourceMappingURL=gallery-collections.6e853d20.js.map
+//# sourceMappingURL=gallery-collections.6a6a4fcd.js.map

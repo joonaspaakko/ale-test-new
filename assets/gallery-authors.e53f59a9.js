@@ -1,6 +1,6 @@
 import { _ as __unplugin_components_1 } from "./gallery-lazy.719d725f.js";
-import { a as __unplugin_components_0 } from "./gallery-search.6ac06c4e.js";
-import { c as slugify } from "./gallery.c4d212c8.js";
+import { a as __unplugin_components_0 } from "./gallery-search.436556ed.js";
+import { c as slugify } from "./gallery.db031907.js";
 import { f as findSubPageSource } from "./gallery-findSubPageSource.65b5640c.js";
 import { _ as _export_sfc, c as createElementBlock, d as createVNode, a as createBaseVNode, F as Fragment, j as renderList, n as normalizeStyle, e as createCommentVNode, r as resolveComponent, b as resolveDirective, o as openBlock, i as createBlock, k as withCtx, t as toDisplayString, w as withDirectives, x as createTextVNode } from "./lodash.1321b47a.js";
 import "./gallery-page-title.a786f9b3.js";
@@ -11,15 +11,15 @@ import "./gallery-makeCoverUrl.8378190f.js";
 import "./index.ee874ed1.js";
 import "./howler.22814ddb.js";
 import "./tippy.82bfa66a.js";
-var galleryPublishers_vue_vue_type_style_index_0_scoped_true_lang = "";
+var galleryAuthors_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main = {
-  name: "alePublishers",
+  name: "aleAuthors",
   mixins: [slugify, findSubPageSource],
   data: function() {
     return {
       collectionSource: "pageCollection",
       listReady: false,
-      pageTitle: "Publishers",
+      pageTitle: "Authors",
       pageSubTitle: null
     };
   },
@@ -47,35 +47,35 @@ const _sfc_main = {
   methods: {
     makeCollection: function() {
       const vue = this;
-      let publishersCollection = [];
+      let authorsCollection = [];
       let addedCounter = 1;
       _.eachRight(vue.subPageSource.collection, function(book) {
-        if (book.publishers) {
-          _.each(book.publishers, function(publisher) {
-            if (publisher.name) {
-              let publishersAdded = _.find(publishersCollection, { name: publisher.name });
-              if (!publishersAdded) {
+        if (book.authors) {
+          _.each(book.authors, function(author) {
+            if (author.name && author.url) {
+              let authorsAdded = _.find(authorsCollection, { name: author.name });
+              if (!authorsAdded) {
                 const newSeries = {
-                  name: publisher.name,
-                  url: vue.slugify(publisher.name),
+                  name: author.name,
+                  url: author.url,
                   added: addedCounter,
                   books: [book.title || book.shortTitle],
-                  authors: book.authors,
                   narrators: book.narrators,
+                  publishers: book.publishers,
                   series: book.series
                 };
-                publishersCollection.push(newSeries);
+                authorsCollection.push(newSeries);
                 ++addedCounter;
               } else {
-                publishersAdded.books.push(book.title || book.shortTitle);
+                authorsAdded.books.push(book.title || book.shortTitle);
                 return false;
               }
             }
           });
         }
       });
-      _.reverse(publishersCollection);
-      this.$store.commit("prop", { key: "pageCollection", value: publishersCollection });
+      _.reverse(authorsCollection);
+      this.$store.commit("prop", { key: "pageCollection", value: authorsCollection });
       this.updateListRenderingOptions();
       this.listReady = true;
     },
@@ -83,11 +83,11 @@ const _sfc_main = {
       let vue = this;
       const list = {
         scope: [
-          { active: true, key: "name", tippy: "Search publishers by name", weight: 5 },
-          { active: true, key: "books", tippy: "Search publishers by book titles", weight: 1 },
-          { active: true, key: "authors.name", tippy: "Search publishers by authors", weight: 1 },
-          { active: true, key: "narrators.name", tippy: "Search publishers by narrators", weight: 1 },
-          { active: true, key: "series.name", tippy: "Search publishers by series", weight: 1 }
+          { active: true, key: "name", tippy: "Search authors by name", weight: 5 },
+          { active: true, key: "books", tippy: "Search authors by book titles", weight: 1 },
+          { active: true, key: "narrators.name", tippy: "Search authors by narrators", weight: 1 },
+          { active: true, key: "publishers.name", tippy: "Search authors by publishers", weight: 1 },
+          { active: true, key: "series.name", tippy: "Search authors by series", weight: 1 }
         ],
         filter: [
           {
@@ -96,10 +96,10 @@ const _sfc_main = {
             label: "Number of books",
             key: "books",
             range: [1, function() {
-              let publishers = _.get(vue.$store.state, vue.collectionSource);
-              let max = _.maxBy(publishers, function(publisher) {
-                if (publisher.books)
-                  return publisher.books.length;
+              let authors = _.get(vue.$store.state, vue.collectionSource);
+              let max = _.maxBy(authors, function(author) {
+                if (author.books)
+                  return author.books.length;
               });
               return max ? max.books.length : 1;
             }()],
@@ -109,18 +109,18 @@ const _sfc_main = {
               return 1;
             },
             rangeMax: function() {
-              let publishers = _.get(vue.$store.state, vue.collectionSource);
-              let max = _.maxBy(publishers, function(publisher) {
-                if (publisher.books)
-                  return publisher.books.length;
+              let authors = _.get(vue.$store.state, vue.collectionSource);
+              let max = _.maxBy(authors, function(author) {
+                if (author.books)
+                  return author.books.length;
               });
               return max ? max.books.length : 1;
             },
-            condition: function(publisher) {
-              if (publisher.books) {
+            condition: function(author) {
+              if (author.books) {
                 let min = this.range[0];
                 let max = this.range[1];
-                return publisher.books.length >= min && publisher.books.length <= max;
+                return author.books.length >= min && author.books.length <= max;
               }
             }
           }
@@ -129,7 +129,7 @@ const _sfc_main = {
           { active: false, key: "randomize", label: "Randomize", type: "sortExtras", tippy: "Ignores sorting and randomizes instead unless there's an active search." },
           { type: "divider", key: "divider1" },
           { active: true, current: true, key: "added", label: "Added", type: "sort", tippy: '<div style="text-align: left;"><small>&#9650;</small> Old at the top <br><small style="display: inline-block; transform: rotate(180deg);">&#9650;</small> New at the top</div>' },
-          { active: true, current: false, key: "name", label: "Name", type: "sort", tippy: "Sort by publisher's name" },
+          { active: true, current: false, key: "name", label: "Name", type: "sort", tippy: "Sort by author's name" },
           { active: false, current: false, key: "amount", label: "Number of books", type: "sort" }
         ]
       };
@@ -140,7 +140,7 @@ const _sfc_main = {
 const _hoisted_1 = {
   key: 0,
   class: "books-total",
-  content: "Total number of books from this publisher."
+  content: "Total number of books with this author."
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_gallery_search = __unplugin_components_0;
@@ -149,7 +149,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _directive_tippy = resolveDirective("tippy");
   return _ctx.listReady ? (openBlock(), createElementBlock("div", {
     key: 0,
-    id: "ale-publishers",
+    id: "ale-authors",
     class: "box-layout-wrapper",
     style: normalizeStyle($options.optionsOpenMargin),
     ref: "wrapper"
@@ -163,11 +163,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         return openBlock(), createBlock(_component_gallery_lazy, {
           class: "single-box",
           "data-name": item.name,
-          key: "publishers:" + item.name
+          key: "authors:" + item.name
         }, {
           default: withCtx(() => [
             createVNode(_component_router_link, {
-              to: { name: "publisher", params: { publisher: item.url }, query: { subPageSource: _ctx.subPageSource.name } }
+              to: { name: "author", params: { author: item.url }, query: { subPageSource: _ctx.subPageSource.name } }
             }, {
               default: withCtx(() => [
                 createBaseVNode("h2", null, toDisplayString(item.name), 1),
@@ -186,6 +186,6 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     ], 4)
   ], 4)) : createCommentVNode("", true);
 }
-var galleryPublishers = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-ca5bfb4e"]]);
-export { galleryPublishers as default };
-//# sourceMappingURL=gallery-publishers.1d07dc83.js.map
+var galleryAuthors = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-6e14b82e"]]);
+export { galleryAuthors as default };
+//# sourceMappingURL=gallery-authors.e53f59a9.js.map
