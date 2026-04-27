@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>A mysterious plague ushers in an intergalactic war that ravages the galaxy for decades. A soldier and a pilot are tasked to deliver a package. A messenger and a refugee decide to work together on a dying alien planet. A love letter is lost that could be the key to a new future. A dark comedy about the messages we carry in our bones.</p>"; 

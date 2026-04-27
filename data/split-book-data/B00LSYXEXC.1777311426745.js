@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>There was a time when the woods near Duva ate girls - or so the story goes. But it's just possible that the danger may be a little bit closer to home. This story is a companion folk tale to Leigh Bardugo's debut novel, <i>Shadow and Bone</i>.</p>"; 

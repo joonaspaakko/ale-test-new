@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p><b>A quest for bloody vengeance forces Derla, a skilled veteran of the Varinshold underworld, into the service of arch schemer King Janus.</b></p> <p>Charged with protecting the renowned drunkard and cardsharp Sentes Mustor, Derla finds herself drawn into a high stakes game with the notorious criminal overlord known as One Eye.</p>"; 

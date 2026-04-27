@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Esslemont's all-new prequel trilogy takes readers deeper into the politics and intrigue of the <i>New York Times</i> bestselling Malazan Empire. <i>Dancer's Lament</i> focuses on the genesis of the empire, and features Dancer, the skilled assassin, who, alongside the mage Kellanved, would found the Malazan empire. </p>"; 
