@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>With his dying breath, Stoddard Gusarov names his killer: Danielle Boatman. </p> <p>Danielle had a score to settle with Stoddard Gusarov, but murder him? Never. </p> <p>Proving to the police she is innocent is the least of her problems. She has an angry spirit to contend with, the ghost of Stoddard Gusarov - and he's out for revenge. </p>"; 

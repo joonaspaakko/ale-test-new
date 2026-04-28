@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "Menolly has returned home and entered the Harper Hall. But her entry into the Hall proves the beginning of more troubles, and the Master Harper gives her a difficult time because she is a girl. As Menolly begins to despair, she finds help in the shape of nine bright allies."; 

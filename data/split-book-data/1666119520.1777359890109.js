@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p>Born to die and be born again, Gell the Jellyfae must discover her strange connection to the horrible monsters called humans, that speak with words she understands, but seem to want nothing but her death. Driven by a desire for safety and freedom, she ventures forth to Tread the Sky and finds more worlds than one.</p>"; 

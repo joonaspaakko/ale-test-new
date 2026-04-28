@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "Reporter Holly Thorne is intrigued by Jim Ironheart, who has saved 12 lives in the past three months. Holly wants to know what kind of power drives him, why terrifying visions of a churning windmill haunt his dreams, and just what he means when he whispers in his sleep that an enemy who will kill everyone is coming."; 

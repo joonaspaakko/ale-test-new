@@ -1,0 +1,1 @@
+window.bookSummaryJSON = "<p><b>After Jebediah Trapper completed the Impossible Tutorial (by cheating), the vet's been in something of a slump.</b></p> <p>His PTSD is gradually guiding him down the path of self-harm. Crippled, stripped of his power, and homeless, he's got no reason to keep breathing.</p> <p>Until a little girl is in trouble.</p>"; 
