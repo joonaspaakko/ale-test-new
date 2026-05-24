@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>Volume two. Four more stories: the mind of a mind reader, babysitting the supernatural, packing up, and what's it like to be a queen. More fun for fans of the Accords, with setup for the series story arc.</p>"; 

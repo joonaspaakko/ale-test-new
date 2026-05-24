@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>Before the end, there is often change, and change can be very painful. Declan and Stacia come face-to-face with the most powerful elemental of them all, one with the power to eliminate mankind before the Vorsook ever show up. It’s time to confront his destiny and decide what it means to be the most powerful witch of all time.</p>"; 

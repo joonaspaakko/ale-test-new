@@ -1,1 +1,0 @@
-window.bookSummaryJSON = "<p>From the Demon Accords Universe: Meet Katrina Westing. One of Tatiana Demidova's fixers, deadly fighter, borderline psycho. She can make personnel problems literally disappear. Turned at age 12, trapped in a child's body for 170 years, rescued from personal hell by Chris Gordon. This is her story.</p>"; 
