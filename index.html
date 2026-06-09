@@ -44,13 +44,14 @@
             <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
             <script>
               (function() {
+                var base = new URL("./", location.href).href;
                 var m = {
                   name: "My audible library",
                   short_name: "Audible library",
                   icons: [
-                    { src: "favicons/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-                    { src: "favicons/android-chrome-512x512.png", sizes: "512x512", type: "image/png", purpose: "any" },
-                    { src: "favicons/android-chrome-512x512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+                    { src: base + "favicons/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+                    { src: base + "favicons/android-chrome-512x512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+                    { src: base + "favicons/android-chrome-512x512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
                   ],
                   theme_color: "#f29a33",
                   background_color: "#f29a33",
@@ -75,7 +76,7 @@
             <script type="module" src="https://esm.sh/@khmyznikov/pwa-install"></script>
             <script>
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.1781018100124.js')
+            navigator.serviceWorker.register('service-worker.1781018335325.js')
             .then(function(registration) {
               console.log('Registration successful, scope is:', registration.scope);
             })
@@ -84,13 +85,13 @@
             });
           }
         </script>
-            <link id="ale-css" rel="stylesheet" href="assets/gallery.DundmgKB.css">
+            <link id="ale-css" rel="stylesheet" href="assets/gallery.ChkwgscD.css">
           </head>
           <body>
-            <div id="audible-library-extractor" data-version="0.2.14" data-cache-id="1781018100124"></div>
+            <div id="audible-library-extractor" data-version="0.2.14" data-cache-id="1781018335325"></div>
             <pwa-install use-local-storage manifest-url="app.webmanifest" icon="favicons/android-chrome-192x192.png" name="My Audible Library" styles='{"--tint-color": "#f29a33"}'></pwa-install>
             <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-            <script id="ale-js" src="assets/gallery.Aqx12HNN.js" type="module"></script>
+            <script id="ale-js" src="assets/gallery.B6cyckHH.js" type="module"></script>
             <noscript>This library requires javascript to work!</noscript>
           </body>
           </html>
